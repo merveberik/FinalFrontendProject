@@ -1,15 +1,3 @@
-  <!-- Welcome to {{title}}
-  Hello {{user}}
-
-<ul>
-  <li *ngFor="let product of products">{{product.productName}}</li> 
-</ul>
- 
-<ul>
-  <li>Laptop</li>
-  <li>Mouse</li>
-  <li>Keyboard</li>
-</ul> -->
 <div class ="container">
   <app-navi></app-navi>
   <div class="row">
@@ -17,9 +5,8 @@
       <app-category></app-category>
     </div>
     <div class="col-md-9">
-      <app-product></app-product>
+      <router-outlet></router-outlet> //sürekli değişecek olan yer
     </div>
   </div>
 
-  <router-outlet></router-outlet> 
 </div>
